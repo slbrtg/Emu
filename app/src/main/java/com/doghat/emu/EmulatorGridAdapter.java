@@ -9,20 +9,20 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 
-public class AlphabetAdapter extends BaseAdapter {
+public class EmulatorGridAdapter extends BaseAdapter {
     private Context mContext;
-    private String[] mLetters;
+    private String[] mEmulators;
 
 
-    public AlphabetAdapter (Context context, String[] letters){
+    public EmulatorGridAdapter(Context context, String[] emulators){
         this.mContext = context;
-        this.mLetters = letters;
+        this.mEmulators = emulators;
 
     }
 
     @Override
     public int getCount() {
-        return mLetters.length;
+        return mEmulators.length;
     }
 
     @Override
@@ -43,14 +43,14 @@ public class AlphabetAdapter extends BaseAdapter {
 
         if (convertView == null) {
             //get layout from xml file
-            gridView = inflater.inflate(R.layout.alphabet_grid_item, null);
+            gridView = inflater.inflate(R.layout.emulator_grid_item, null);
 
             //pull views
-            TextView letterView = (TextView) gridView.findViewById(R.id.grid_item_letter);
+            TextView emulatorView = (TextView) gridView.findViewById(R.id.grid_item_emulator);
 
             //set values into views
-            String letter = mLetters[position];
-            letterView.setText(letter);
+            String emulator = mEmulators[position];
+            emulatorView.setText(emulator);
 
         } else {
             gridView = (View) convertView;
