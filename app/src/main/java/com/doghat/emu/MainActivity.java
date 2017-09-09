@@ -6,7 +6,7 @@ import android.widget.GridView;
 
 public class MainActivity extends AppCompatActivity {
     GridView gridView;
-    String[] emulators = new String[]{"SNES","PSX","GBA"};
+    String[] emulators = new String[]{"gameboy","nes","psp"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

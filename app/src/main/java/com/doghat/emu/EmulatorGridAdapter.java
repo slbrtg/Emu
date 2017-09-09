@@ -50,7 +50,7 @@ public class EmulatorGridAdapter extends BaseAdapter {
 
             //set values into views
             String emulator = mEmulators[position];
-            emulatorView.setText(emulator);
+            emulatorView.setBackgroundResource(mContext.getResources().getIdentifier(emulator, "drawable", mContext.getPackageName()));
 
         } else {
             gridView = (View) convertView;
