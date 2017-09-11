@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="genesis" type="id"/>
+    <item name="gba"  type="id"/>
+    <item name="psp"  type="id"/>
+    <item name="nes"  type="id"/>
+    <item name="nil"  type="id"/>
+
+</resources>
