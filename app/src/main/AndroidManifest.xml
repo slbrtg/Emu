@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewEmulator"></activity>
+        <activity android:name=".NewEmulator" />
+        <activity android:name=".EmulatorActivity" />
+        <activity android:name=".NewEmulatorActivity"></activity>
     </application>
 
 </manifest>

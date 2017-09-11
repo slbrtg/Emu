@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class EmulatorGridAdapter extends BaseAdapter {
     private Context mContext;
     private String[] mEmulators;
-    //private int mEmulatorId;
 
 
     public EmulatorGridAdapter(Context context, String[] emulators){
@@ -53,19 +52,8 @@ public class EmulatorGridAdapter extends BaseAdapter {
             String emulator = mEmulators[position];
             emulatorView.setBackgroundResource(mContext.getResources().getIdentifier(emulator, "drawable", mContext.getPackageName()));
             emulatorView.setId(mContext.getResources().getIdentifier(emulator, "id", mContext.getPackageName()));
+            
 
-//            if(emulator.equals("gba")){
-//                mEmulatorId = R.id.gba;
-//            } else if (emulator.equals("nes")){
-//                mEmulatorId = R.id.nes;
-//            } else if (emulator.equals("psp")){
-//                mEmulatorId = R.id.psp;
-//            } else if (emulator.equals("genesis")){
-//                mEmulatorId = R.id.genesis;
-//            } else {
-//                mEmulatorId = R.id.nil;
-//            }
-//            emulatorView.setId(mEmulatorId);
 
         } else {
             gridView = (View) convertView;
